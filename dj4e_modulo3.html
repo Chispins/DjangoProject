@@ -29,16 +29,29 @@
     </ul>
 </nav>
 <h1>Puttin the Cascade in CSS</h1>
-<p>
+<p style="height: 3em; position: relative; left: -20px; top: 20px;">
 Order matter. The CSS rule that is "closest" to the tag wins unless a further
 away tag (i.e border-color) marks itself as <b>!important</b>
 </p>
-<p style="border-style: dashed; border-color: blue;">
+<p style="border-style: dashed; border-color: blue;height: 40px; position: absolute; top: 40px; lef: 30%">
     Even using te <strong>style</strong> attribute <em> right on the tag</em>
     fades in the face of the <strong>!important</strong> tag
 </p>
-<p style="border-style: dot-dash; border-color: blueviolet !important;">
+<p style="border-style: dot-dash; border-color: blueviolet !important;height: 3em; overflow: scroll; position: relative; left: -100px">
     But you can always take local control using <strong>!important tag</strong>
+</p>
+<p style="border-style: dot-dash; border-color: blueviolet !important;height: 3em; overflow: scroll">
+    But you
+</p>
+<p style="border-style: dashed; border-color: blue;height: 40px; position:fixed; bottom: 10px; right: 10px">
+    Even using te <strong>style</strong> attribute <em> right on the tag</em>
+    fades in the face of the <strong>!important</strong> tag
+</p>
+<p style="border-style: dashed; border-color: blue;overflow: hidden; height: 3em">
+    Even using te <strong>style</strong> attribute <em> right on the tag</em>
+    fades in the face of the <strong>!important</strong> tag
+    Like for example if we were able to tell who is gonna be the best on the next
+    period he wont be the best on the next period but he would be the best on thiks period
 </p>
 </body>
 </html>
