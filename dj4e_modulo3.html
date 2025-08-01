@@ -1,26 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Jane Instructor 4c56ff bb2632 </title>
-  <meta charset="UTF-8">
-  <style> body {
-      font-family: "Yu Gothic UI Semibold";
-  }</style>
+    <title>*Cascading*</title>
+    <style>
+        body {
+            font-family: "Segoe UI Variable";
+        }
+        p {
+            border-style:dotted;
+            border-color: red!important;
+            border-width: 5px;
+            background-color: lightskyblue;
+            padding: 10px;
+            margin: 20px;
+        }
+    </style>
+    <style>
+        p {
+            border-style: solid;
+            border-color:palegreen;
+        }
+    </style>
 </head>
 <body>
-<h1>This is just a starting point</h1>
-<p><span style="background-color:red">;Construct your HTML following the instructions below.</span></p>
-
-<h1>Titulo General</h1>
-<a href = "https://www.youtube.com"> <span style="background-color:cyan"> Youtube</span>></a>
-<a href = "https://www.google.com"> <em>Google</em></a>
-<a href = "https://www.facebook.com"><strong>Facebook</strong></a>
-<ul>
-    <li>First</li>
-    <li>Second</li>
-    <li>Third</li>
-</ul>
-<p>When you have finished your HTML *and* it passes the HTML
- validator, you can submit it to the autograder.</p>
+<nav>
+    <ul>
+        <li><a href="https://www.google.com" class="back">Google</a></li>
+        <li><a href="https://www.youtube.com">Youtube</a></li>
+    </ul>
+</nav>
+<h1>Puttin the Cascade in CSS</h1>
+<p>
+Order matter. The CSS rule that is "closest" to the tag wins unless a further
+away tag (i.e border-color) marks itself as <b>!important</b>
+</p>
+<p style="border-style: dashed; border-color: blue;">
+    Even using te <strong>style</strong> attribute <em> right on the tag</em>
+    fades in the face of the <strong>!important</strong> tag
+</p>
+<p style="border-style: dot-dash; border-color: blueviolet !important;">
+    But you can always take local control using <strong>!important tag</strong>
+</p>
 </body>
 </html>
